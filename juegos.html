@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aventura | NEXUSPLAY</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="encabezado">
+<div class="logo"><h1>NEXUS<span>PLAY</span></h1>
+<p>GAMING STORE</p></div>
+<input class="buscador" data-search placeholder="Buscar juegos...">
+<a class="boton-carrito" href="#carrito">🛒 Carrito (<span data-cart-count>0</span>)</a>
+</header>
+
+<nav class="menu">
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="juegos.html">AVENTURA</a></li>
+<li><a href="contacto.html">MULTIJUGADOR</a></li>
+<li><a href="rpg.html">RPG</a></li>
+<li><a href="carreras.html">CARRERAS</a></li>
+<li><a href="accesorios.html">ACCESORIOS</a></li>
+</ul>
+</nav>
+
+<section class="titulo-pagina">
+<h2>🗺️ JUEGOS DE AVENTURA</h2>
+<p>Explora mundos increíbles y vive grandes aventuras.</p>
+</section>
+
+<section class="catalogo">
+<div class="productos">
+
+<div class="producto">
+<div class="imagen-juego">⛏️</div>
+<h3>Minecraft</h3>
+<p class="precio">$500.000</p>
+<button onclick="addToCart('Minecraft',500000)">AGREGAR</button>
+</div>
+
+<div class="producto">
+<div class="imagen-juego">🚗</div>
+<h3>GTA V</h3>
+<p class="precio">$180.000</p>
+<button onclick="addToCart('GTA V',180000)">AGREGAR</button>
+</div>
+
+<div class="producto">
+<div class="imagen-juego">🤠</div>
+<h3>Red Dead Redemption 2</h3>
+<p class="precio">$220.000</p>
+<button onclick="addToCart('Red Dead Redemption 2',220000)">AGREGAR</button>
+</div>
+
+<div class="producto">
+<div class="imagen-juego">🏹</div>
+<h3>Tomb Raider</h3>
+<p class="precio">$150.000</p>
+<button onclick="addToCart('Tomb Raider',150000)">AGREGAR</button>
+</div>
+
+</div>
+</section>
+
+<section class="carrito" id="carrito">
+<h2>🛒 MI CARRITO</h2>
+<ul data-cart-list></ul>
+<h3>Total: <span data-cart-total>$0</span></h3>
+<button onclick="clearCart()">VACIAR CARRITO</button>
+</section>
+
+<footer><h2>NEXUSPLAY</h2><p>Tu próxima partida comienza aquí.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
